@@ -14,6 +14,11 @@ public class Location {
 
     Logger logger = Logger.getLogger(getClass().getName());
 
+    @GetMapping("/")
+    public String hello() {
+        return "hello world!";
+    }
+
     @GetMapping("/listHeaders")
     public ResponseEntity<String> listAllHeaders(
             @RequestHeader Map<String, String> headers) {
