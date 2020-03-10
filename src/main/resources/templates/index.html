@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Know Your Location </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<center> <h1>Location</h1> </center>
+
+
+<div class="jumbotron">
+<!--
+    <h1 class="display-4">Your Country is! <p th:text="${country}"> </p></h1>
+-->
+    <p class="lead">Your Country is <h4 th:text="${country}"> </h4>
+
+    <p class="lead">Your City is <h4 th:text="${city}"> </h4>
+    <p class="lead">Your Region is <h4 th:text="${region}"> </h4>
+    <p class="lead">Your Lat-Long is <h4 th:text="${latLong}"> </h4>
+
+    <hr class="my-4">
+    <p>This app uses google cloud headers to find this information </p> </p>
+    <a class="btn btn-primary btn-lg" href="https://cloud.google.com/appengine/docs/standard/go/reference/request-response-headers" role="button">Learn more</a>
+</div>
+
+
+<!--<p th:text="${country}"></p>
+<p th:text="${region}"></p>
+<p th:text="${city}"></p>
+<p th:text="${latLong}"></p>-->
+
+</body>
+
+</html>
