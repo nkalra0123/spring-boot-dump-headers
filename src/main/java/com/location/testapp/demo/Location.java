@@ -35,7 +35,7 @@ public class Location {
     public ResponseEntity<String> listAllHeaders(
             @RequestHeader Map<String, String> headers) {
         headers.forEach((key, value) -> {
-            logger.info(String.format("Header '%s' = %s", key, value));
+            //logger.info(String.format("Header '%s' = %s", key, value));
         });
 
         return new ResponseEntity<String>(
